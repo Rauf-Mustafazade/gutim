@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background: linear-gradient(to right, #4ec072, #1ad809);
+}
+
+header {
+  background: linear-gradient(to right, #060d72, #0534d0);
+}
+header .container {
+  display: flex;
+  margin: 0 auto;
+  width: 75%;
+  padding: 20px 0;
+}
+header .logo {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+}
+header nav {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  background-color: #4C4C4C;
+}
+header nav .nav-menu {
+  display: block;
+  margin-top: 10px;
+}
+header nav .nav-menu ul {
+  display: flex;
+  gap: 30px;
+  font-size: 18px;
+}
+header nav .nav-menu ul a {
+  color: #ffffff;
+  font-weight: bold;
+}
+header nav .nav-menu ul a:hover {
+  text-decoration: underline;
+  color: #f67831;
+  transition: 1s;
+}
+header .sing-up {
+  margin-left: 18%;
+}
+header .sing-up button {
+  background-color: #4C4C4C;
+  color: white;
+  border-left: 2px solid #eb3c5a;
+  border-right: 2px solid #f67831;
+  border-top: 2px solid #eb3c5a;
+  border-bottom: 2px solid #f67831;
+  width: 155px;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 500;
+}
+header .sing-up button:hover {
+  cursor: pointer;
+  background: linear-gradient(to right, #eb3c5a, #f67831);
+  transition: 1s;
+  color: #111111;
+}
+
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #F1F2F3;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popop {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 50vh;
+  height: 100vh;
+  margin-left: 37%;
+}
+.popop i {
+  color: #7db27c;
+}
+
+.login--container {
+  z-index: 5;
+  background: linear-gradient(to right, #eb3c5a, #f67831);
+  padding: 20px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  align-items: center;
+  border-radius: 30px;
+}
+.login--container .nameP {
+  position: relative;
+}
+.login--container .nameP input {
+  width: 100%;
+  height: 30px;
+  padding-left: 30px;
+}
+.login--container .nameP span {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+.login--container #dahil {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.login--container .passwordP {
+  position: relative;
+}
+.login--container .passwordP input {
+  height: 30px;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+.login--container .passwordP .block {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+.login--container .passwordP .eyes {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+.login--container .not {
+  background-color: transparent;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  font-size: 11px;
+}
+.login--container .not:hover {
+  text-decoration: underline;
+}
+.login--container #buttonLogin {
+  background: linear-gradient(to right, #615f5f, #333030);
+  border: none;
+  outline: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 30px;
+}
+.login--container h3 {
+  font-size: 14px;
+  color: darkgreen;
+}
+.login--container .good {
+  display: flex;
+  justify-content: space-between;
+}
+.login--container label {
+  font-size: 14px;
+}
+.login--container label input {
+  width: 12px;
+}
+
+.registr {
+  background: linear-gradient(to right, #3422bf, #12579f);
+  padding: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  align-items: center;
+  border-radius: 30px;
+}
+.registr h3 {
+  font-size: 14px;
+  color: darkgreen;
+}
+.registr #registrasiya ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.registr #registrasiya ul .Kecid span {
+  color: red;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 10px;
+}
+.registr #registrasiya ul .Kecid span:hover::after {
+  content: "";
+  width: 33%;
+  height: 1px;
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  background: #c21f1f;
+}
+.registr #registrasiya ul li {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.registr #registrasiya ul li #regist {
+  background: linear-gradient(to right, #eb3c5a, #f67831);
+  border: none;
+  outline: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 30px;
+}
+.registr #registrasiya ul li #Login {
+  padding-left: 30px;
+}
+.registr #registrasiya ul li #Email {
+  padding-left: 30px;
+}
+.registr #registrasiya ul li #Pasword {
+  padding-left: 30px;
+}
+.registr #registrasiya ul li input {
+  width: 100%;
+  height: 30px;
+}
+.registr label {
+  font-size: 14px;
+  color: darkgreen;
+}
+.registr .LoginRegistrI {
+  position: relative;
+}
+.registr #LoginRegistrI {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+.registr .EmailRegistrI {
+  position: relative;
+}
+.registr #EmailRegistrI {
+  position: absolute;
+  top: 31px;
+  left: 10px;
+}
+.registr .PaswordRegistrI {
+  position: relative;
+}
+.registr #PaswordRegistrI-1 {
+  position: absolute;
+  top: 31px;
+  left: 10px;
+}
+.registr #PaswordRegistrI-2 {
+  top: 31px;
+  right: 10px;
+  position: absolute;
+  cursor: pointer;
+}
+.registr #PaswordRegistrI-3 {
+  top: 31px;
+  right: 10px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.PopSpan {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.go--top {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  z-index: 15;
+  transform: translateY(-50%);
+  font-size: 20px;
+  padding: 10px 15px;
+  background-color: #12c247;
+  cursor: pointer;
+}
+.go--top i {
+  color: #d0ff00;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+.go--top::after {
+  position: absolute;
+  top: -24px;
+  left: 0px;
+  content: "";
+  width: 100%;
+  background-color: #12c247;
+  height: 30px;
+  border-radius: 45px 45px 0px 0px;
+  border: none;
+}
+.go--top:hover {
+  background-color: #46bc69;
+}
+.go--top:hover i {
+  color: blue;
+}
+.go--top:hover::after {
+  background-color: #46bc69;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
